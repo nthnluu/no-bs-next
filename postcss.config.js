@@ -1,14 +1,18 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
-    theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-            },
-        },
-    },
     plugins: [
-        require('@tailwindcss/ui'),
-    ]
+        'tailwindcss',
+        process.env.NODE_ENV === 'production'
+            ? [
+                '@fullhuman/postcss-purgecss',
+                {
+                    content: [
+                        './pages/**/*.{js,jsx,ts,tsx}',
+                        './components/**/*.{js,jsx,ts,tsx}',
+                    ],
+                    defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
+                },
+            ]
+            : undefined,
+        'autoprefixer'
+    ],
 }

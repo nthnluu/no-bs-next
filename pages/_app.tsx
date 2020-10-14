@@ -2,13 +2,13 @@ import type {AppProps} from 'next/app'
 import '../styles/tailwind.css'
 import {useEffect, useState} from "react";
 import fb from "../util/firebase-config";
-import SessionContext from "../util/hooks/SessionContext";
+import SessionContext from "../util/SessionContext";
 
 function MyApp({Component, pageProps}: AppProps) {
 
     const [sessionLoaded, toggleSessionLoaded] = useState(false)
     const [isAuthenticated, toggleAuthenticated] = useState(false)
-    const [userProfile, setUserProfile] = useState(undefined)
+    const [userProfile, setUserProfile] = useState({})
 
     useEffect(() => {
         fb.auth().onAuthStateChanged((user) => {
@@ -20,6 +20,7 @@ function MyApp({Component, pageProps}: AppProps) {
             } else {
                 // User is signed out.
                 toggleAuthenticated(false)
+                setUserProfile({})
                 toggleSessionLoaded(true)
             }
         });

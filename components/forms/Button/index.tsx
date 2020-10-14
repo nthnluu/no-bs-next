@@ -8,9 +8,10 @@ interface Props {
     type?: "button" | "submit" | "reset";
     onClick?: () => void;
     loading?: boolean;
+    disabled?: boolean;
 }
 
-const Button: React.FC<Props> = ({className, sizes, variant, color = "primary", type, loading, ...props}) => {
+const Button: React.FC<Props> = ({className, sizes, variant, color = "primary", type, loading, disabled, ...props}) => {
 
     const styles = {
         base: "inline-flex items-center border border-transparent font-medium rounded-md " +
@@ -24,7 +25,7 @@ const Button: React.FC<Props> = ({className, sizes, variant, color = "primary", 
         },
         filled: {
             primary: `text-white ${useTheme(color, "background", 600)} hover:${useTheme(color, "background", 500)} focus:outline-none focus:${useTheme(color, "background", 700)} ` +
-                `focus:${useTheme(color, "shadowOutline")} active:${useTheme(color, "background", 700)}`
+                `focus:${useTheme(color, "shadowOutline")} active:${useTheme(color, "background", 700)} ${disabled ? "opacity-75" : "opacity-100"}`
 
         },
         light: {

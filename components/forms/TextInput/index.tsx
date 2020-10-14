@@ -12,6 +12,7 @@ interface Props {
     autoComplete?: string;
     id?: string;
     required?: boolean;
+    disabled?: boolean
 }
 
 const TextInput: React.FC<Props> = ({label, error, helperText, required, ...props}) => {

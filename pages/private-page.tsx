@@ -1,6 +1,6 @@
 import PageLayout from "../components/PageLayout";
 import {useContext} from "react";
-import SessionContext from "../util/hooks/SessionContext";
+import SessionContext from "../util/SessionContext";
 
 export default function Private() {
     const {userProfile} = useContext(SessionContext)

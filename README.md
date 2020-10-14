@@ -30,7 +30,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/nthnluu/no-bs-next">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/25859802/96039267-3f134500-0e1d-11eb-95b0-65c82e48fe66.png" alt="Logo" height="80">
   </a>
 
   <h3 align="center">No BS Next Boilerplate 🔥</h3>

@@ -8,6 +8,9 @@ interface Props {
     label?: string;
     error?: boolean;
     helperText?: string;
+    type?: string;
+    autoComplete?: string;
+    id?: string;
 }
 
 const TextInput: React.FC<Props> = ({label, error, helperText, ...props}) => {

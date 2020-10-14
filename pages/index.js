@@ -7,7 +7,10 @@ export default function Home() {
               <img src="/logos.png" className="h-32 lg:h-48 mx-auto"/>
               <h1 className="text-4xl font-bold text-gray-900">No BS Next 🔥</h1>
               <h2 className="text-2xl text-gray-700 mb-12">The fast way to build secure, full-stack web apps.</h2>
-              <TextInput placeholder="email@gmail.com" label="Email Address"  helperText="hello!"/>
+              <div className="px-32 space-y-6">
+
+              </div>
+
           </div>
 
 

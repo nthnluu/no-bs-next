@@ -1,4 +1,5 @@
 import React, {useRef} from "react";
+import useTheme from "../../../util/useTheme";
 
 interface Props {
     value?: string;
@@ -13,7 +14,7 @@ const TextInput: React.FC<Props> = ({label, error, helperText, ...props}) => {
 
     const elementId = useRef(null)
 
-    const classNames = "border-gray-300 text-gray-800 placeholder-gray-300 focus:border-blue-300 focus:shadow-outline-blue"
+    const classNames = `border-gray-300 text-gray-800 placeholder-gray-300 focus:${useTheme("primary", "border", 400)} focus:${useTheme("primary", "shadowOutline")}`
     const errorClassnames = "border-red-300 text-red-800 placeholder-red-300 focus:border-red-300 focus:shadow-outline-red"
 
 

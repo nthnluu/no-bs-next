@@ -8,8 +8,9 @@ module.exports = {
       },
     },
   },
-  experimental: {
-    uniformColorPalette: true,
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
   },
   plugins: [
     require('@tailwindcss/ui'),

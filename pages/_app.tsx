@@ -3,6 +3,7 @@ import '../styles/tailwind.css'
 import {useEffect, useState} from "react";
 import fb from "../util/firebase-config";
 import SessionContext from "../util/SessionContext";
+import Head from "next/head";
 
 function MyApp({Component, pageProps}: AppProps) {
 

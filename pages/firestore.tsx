@@ -2,11 +2,11 @@ import PageLayout from "../components/PageLayout";
 import {useContext} from "react";
 import SessionContext from "../util/SessionContext";
 
-export default function Private() {
+export default function Firestore() {
     const {userProfile} = useContext(SessionContext)
 
     return (
-        <PageLayout privateRoute title="Private Page">
+        <PageLayout privateRoute title="Firestore Example">
             <div className="h-screen flex justify-center items-center px-12 bg-gray-50">
                 <div className="text-center">
                     <h1 className="text-4xl font-bold text-gray-900">Authenticated succesfully 👌</h1>

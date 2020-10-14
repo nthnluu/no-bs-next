@@ -10,6 +10,7 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
+                    <title>No BS Next</title>
                     <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
                     <script src="https://kit.fontawesome.com/aeb9fcb31a.js" crossOrigin="anonymous"/>
                 </Head>

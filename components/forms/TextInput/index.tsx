@@ -11,9 +11,10 @@ interface Props {
     type?: string;
     autoComplete?: string;
     id?: string;
+    required?: boolean;
 }
 
-const TextInput: React.FC<Props> = ({label, error, helperText, ...props}) => {
+const TextInput: React.FC<Props> = ({label, error, helperText, required, ...props}) => {
 
     const elementId = useRef(null)
 
@@ -24,7 +25,7 @@ const TextInput: React.FC<Props> = ({label, error, helperText, ...props}) => {
     return <div className="text-left">
         <label htmlFor={elementId.current} className="block text-sm font-medium leading-5 text-gray-700">{label}</label>
         <div className="mt-1 relative rounded-md shadow-sm">
-            <input {...props} ref={elementId} className={`p-2.5 text-sm rounded-md border 
+            <input {...props} required={required} ref={elementId} className={`p-2.5 text-sm rounded-md border 
             focus:outline-none w-full transition-shadow duration-150 ${error ? errorClassnames : classNames}`}/>
 
             {error && <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">

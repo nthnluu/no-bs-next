@@ -10,8 +10,8 @@ const SignIn = () => {
     }
     return <div className="flex justify-center items-center h-screen">
         <div>
-            <div className="w-96 space-y-3 text-center rounded-lg border border-gray-200 p-8">
-                <form onSubmit={signIn}>
+            <div className="w-96 text-center rounded-lg border border-gray-200 p-8">
+                <form onSubmit={signIn} className="space-y-4">
                     <h1 className="text-4xl font-bold">Log in</h1>
                     <TextInput label="Email" id="email"/>
                     <TextInput label="Password" type="password" id="password"/>

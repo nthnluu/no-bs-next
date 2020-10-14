@@ -8,6 +8,9 @@ module.exports = {
       },
     },
   },
+  experimental: {
+    uniformColorPalette: true,
+  },
   plugins: [
     require('@tailwindcss/ui'),
   ]

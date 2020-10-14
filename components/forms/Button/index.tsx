@@ -6,9 +6,11 @@ interface Props {
     variant: "light" | "filled"
     color?: "primary"
     type?: "button" | "submit" | "reset";
+    onClick?: () => void;
+    loading?: boolean;
 }
 
-const Button: React.FC<Props> = ({className, sizes, variant, color = "primary", type, ...props}) => {
+const Button: React.FC<Props> = ({className, sizes, variant, color = "primary", type, loading, ...props}) => {
 
     const styles = {
         base: "inline-flex items-center border border-transparent font-medium rounded-md " +
@@ -31,7 +33,9 @@ const Button: React.FC<Props> = ({className, sizes, variant, color = "primary", 
         }
     }
     return <button type={type}
+                   {...props}
                    className={`${styles.base} ${styles.sizes[sizes]} ${styles[variant].primary} ${className}`}>
+        {loading && <i className="fas fa-circle-notch fa-spin mr-1.5"/>}
         {props.children}
     </button>
 }

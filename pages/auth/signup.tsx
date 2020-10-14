@@ -2,15 +2,18 @@ import TextInput from "../../components/forms/TextInput";
 import React, {useState} from "react";
 import Button from "../../components/forms/Button";
 import fb from "../../util/firebase-config";
+import {useRouter} from "next/router";
 
 const SignUp = () => {
 
+    const router = useRouter()
     const [error, setError] = useState(undefined)
 
     function signUp(event) {
         event.preventDefault()
         if (event.target.password.value === event.target["confirm-password"].value) {
-            fb.auth().signInWithEmailAndPassword(event.target.email.value, event.target.password.value)
+            fb.auth().createUserWithEmailAndPassword(event.target.email.value, event.target.password.value)
+                .then(() => router.push('/private-page'))
         } else {
             setError("Passwords must match.")
         }

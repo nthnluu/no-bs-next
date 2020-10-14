@@ -2,11 +2,15 @@ import TextInput from "../../components/forms/TextInput";
 import React from "react";
 import Button from "../../components/forms/Button";
 import fb from "../../util/firebase-config";
+import {useRouter} from "next/router";
 
 const SignIn = () => {
+    const router = useRouter()
+
     function signIn(event) {
         event.preventDefault()
         fb.auth().signInWithEmailAndPassword(event.target.email.value, event.target.password.value)
+            .then(() => router.push('/private-page'))
     }
     return <div className="flex justify-center items-center h-screen">
         <div>

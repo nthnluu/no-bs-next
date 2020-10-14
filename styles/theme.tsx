@@ -1,38 +1,38 @@
 const theme = {
     "primary": {
-        "shadowOutline": "shadow-outline-purple",
+        "shadowOutline": "shadow-outline-blue",
         "text": {
-            "100": "text-purple-100",
-            "200": "text-purple-200",
-            "300": "text-purple-300",
-            "400": "text-purple-400",
-            "500": "text-purple-500",
-            "600": "text-purple-600",
-            "700": "text-purple-700",
-            "800": "text-purple-800",
-            "900": "text-purple-900"
+            "100": "text-blue-100",
+            "200": "text-blue-200",
+            "300": "text-blue-300",
+            "400": "text-blue-400",
+            "500": "text-blue-500",
+            "600": "text-blue-600",
+            "700": "text-blue-700",
+            "800": "text-blue-800",
+            "900": "text-blue-900"
         },
         "background": {
-            "100": "bg-purple-100",
-            "200": "bg-purple-200",
-            "300": "bg-purple-300",
-            "400": "bg-purple-400",
-            "500": "bg-purple-500",
-            "600": "bg-purple-600",
-            "700": "bg-purple-700",
-            "800": "bg-purple-800",
-            "900": "bg-purple-900"
+            "100": "bg-blue-100",
+            "200": "bg-blue-200",
+            "300": "bg-blue-300",
+            "400": "bg-blue-400",
+            "500": "bg-blue-500",
+            "600": "bg-blue-600",
+            "700": "bg-blue-700",
+            "800": "bg-blue-800",
+            "900": "bg-blue-900"
         },
         "border": {
-            "100": "border-purple-100",
-            "200": "border-purple-200",
-            "300": "border-purple-300",
-            "400": "border-purple-400",
-            "500": "border-purple-500",
-            "600": "border-purple-600",
-            "700": "border-purple-700",
-            "800": "border-purple-800",
-            "900": "border-purple-900"
+            "100": "border-blue-100",
+            "200": "border-blue-200",
+            "300": "border-blue-300",
+            "400": "border-blue-400",
+            "500": "border-blue-500",
+            "600": "border-blue-600",
+            "700": "border-blue-700",
+            "800": "border-blue-800",
+            "900": "border-blue-900"
         }
     }
 }

@@ -36,7 +36,7 @@
   <h3 align="center">No BS Next Boilerplate 🔥</h3>
 
   <p align="center">
-    Stop setting up boilerplate and jump into building features.
+    The fast way to build secure, full-stack web apps.
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />

@@ -13,7 +13,7 @@ export default function Private() {
                     <h2 className="text-xl text-gray-700 mt-2">
                         Only you can see this page. Edit it at
                         <span className="inlineCode">/pages/private-page.tsx</span></h2>
-                    <h3 className="text-xl text-blue-500 font-semibold mt-8">Logged in as {userProfile.email}</h3>
+                    <h3 className="text-xl text-blue-600 font-semibold mt-8">Logged in as {userProfile.email}</h3>
                 </div>
             </div>
         </PageLayout>

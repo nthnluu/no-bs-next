@@ -1,5 +1,3 @@
-import useTheme from "../../../util/useTheme";
-
 interface Props {
     className?: string;
     sizes: "sm" | "md" | "lg" | "xl" | "2xl";

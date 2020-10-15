@@ -6,6 +6,8 @@ import {useRouter} from "next/router";
 
 const SignIn = () => {
     const router = useRouter()
+
+    const {status} = router.query
     const [loading, toggleLoading] = useState(false)
     const [error, setError] = useState("")
 
@@ -34,8 +36,11 @@ const SignIn = () => {
                     <TextInput label="Password" type="password" id="password" required error={error.length > 0}
                                disabled={loading}
                                helperText={error}/>
+                               <p className="text-md text-left font-semibold text-green-500">{status && "Check your email for a link to reset your password."}</p>
                     <div className="text-right pt-4">
-                        <Button variant="light" className="mr-2" sizes="lg" color="primary">Forgot password</Button>
+                        <Button variant="light"
+                                onClick={() => router.push('/auth/forgot')}
+                                className="mr-2" sizes="lg" color="primary">Forgot password</Button>
                         <Button variant="filled" sizes="lg" color="primary" type="submit"
                                 disabled={loading} loading={loading}>Log in</Button>
                     </div>

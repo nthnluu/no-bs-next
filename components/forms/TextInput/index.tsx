@@ -19,7 +19,7 @@ const TextInput: React.FC<Props> = ({label, error, helperText, required, ...prop
 
     const elementId = useRef(null)
 
-    const classNames = `border-gray-300 text-gray-800 placeholder-gray-300 focus:${useTheme("primary", "border", 400)} focus:${useTheme("primary", "shadowOutline")}`
+    const classNames = `border-gray-300 text-gray-800 placeholder-gray-300 focus:border-primary-400 focus:shadow-outline-primary`
     const errorClassnames = "border-red-300 text-red-800 placeholder-red-300 focus:border-red-300 focus:shadow-outline-red"
 
 

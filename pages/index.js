@@ -1,6 +1,7 @@
 import PageLayout from "../components/PageLayout";
 
 export default function Home() {
+
     return (
         <PageLayout title="Welcome to No BS Next!">
             <div className="h-screen flex justify-center items-center px-12 bg-gray-50">

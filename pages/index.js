@@ -1,5 +1,6 @@
 import PageLayout from "../components/PageLayout";
 import Dropdown from "../components/forms/Dropdown";
+import TextInput from "../components/forms/TextInput";
 
 export default function Home() {
 
@@ -10,7 +11,6 @@ export default function Home() {
                     <img src="/no-bs-next_logo.png" className="h-16 md:h-24 lg:h-32 mx-auto mb-8"/>
                     <h1 className="text-4xl font-bold text-gray-900">No BS Next</h1>
                     <h2 className="text-2xl text-gray-700 mb-12">The fast way to build secure, full-stack web apps.</h2>
-                    <Dropdown/>
                 </div>
             </div>
         </PageLayout>

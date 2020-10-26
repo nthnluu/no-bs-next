@@ -31,6 +31,9 @@ function MyApp({Component, pageProps}: AppProps) {
     if (!sessionLoaded) return null
 
     return (<SessionContext.Provider value={{isAuthenticated, userProfile}}>
+        <Head>
+            <title>No BS Next</title>
+        </Head>
         <Component {...pageProps} />
     </SessionContext.Provider>)
 }

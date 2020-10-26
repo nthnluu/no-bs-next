@@ -44,19 +44,16 @@ const PageLayout: React.FC<Props> = ({children, privateRoute, title, redirectPat
         </Head>
         <div className="fixed w-full">
             <div className="h-1 bg-gradient-to-r from-teal-400 to-blue-600"/>
-            <div className="flex justify-between p-3 shadow-md items-center bg-white">
+            <div className="flex justify-between py-2.5 px-4 shadow-md items-center bg-white">
                 <a href="https://github.com/nthnluu/no-bs-next"
-                   className="flex justify-between items-center text-lg font-semibold focus:underline truncate">
-                    <img
-                        className="h-8 mr-1.5"
-                        src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>
-                    nthnluu/no-bs-next
+                   className="flex justify-between items-center font-medium text-lg focus:underline truncate">
+                    🔥 nthnluu/no-bs-next
                 </a>
                 <div className="items-center">
-                    {isAuthenticated ? <Button sizes="lg" variant="filled" onClick={signOut}>Sign out</Button> :
+                    {isAuthenticated ? <Button sizes="md" variant="filled" onClick={signOut}>Sign out</Button> :
                         <span className="space-x-2">
-                    <Button onClick={() => router.push('/auth/signin')} sizes="lg" variant="light">Log in</Button>
-                    <Button onClick={() => router.push('/auth/signup')} sizes="lg" variant="filled">Sign up</Button>
+                    <Button onClick={() => router.push('/auth/signin')} sizes="md" variant="light">Log in</Button>
+                    <Button onClick={() => router.push('/auth/signup')} sizes="md" variant="filled">Sign up</Button>
                 </span>}
                 </div>
 

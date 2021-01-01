@@ -14,7 +14,6 @@ This boilerplate is designed to be the perfect starting point for any React proj
 as frontend and Firebase as backend. Jump right into building features and worry less about setting up boilerplate.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [🛠 Next.js](https://getbootstrap.com)
 * [🎨 Tailwind CSS](https://jquery.com)
 * [🔥 Firebase ](https://laravel.com)
@@ -28,13 +27,13 @@ Before we work with the frontend, we're going to create a Firebase project.
 
 ### Getting Started
 
-1. Create a Firebase project
+1. Add a new "web" app to your Firebase project
 2. Clone the repo
 3. Install NPM packages
 ```
 yarn install
 ```
-4. Clone the contents of  `example.env` into a new `.env` file and fill out the values with your Firebase project credentials
+4. Clone the contents of  `example.env` into a new `.env` file and fill out the values with your Firebase app credentials
 5. Run the project
 ```
 yarn dev
